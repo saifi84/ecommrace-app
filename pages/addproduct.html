@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../js/home.js"></script>
+    <script src="../js/addproduct.js"></script>
+    <script src="../js/apis.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+    <div class="container container-fluid">
+        <div > 
+  
+            <h1 class="mb-4">New Product</h1>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input
+                  type="text"
+                  id="price"
+                  class="form-control"
+                  value=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="8" ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="rating">Rating</label>
+                <input
+                  type="text"
+                  id="rating"
+                  class="form-control"
+                  value=""
+                />
+              </div>  
+            <button
+            id="login-btn"
+              type="submit"
+              class="btn btn-block py-3 form-button"
+              onclick="addNewProduct()"
+            >
+              CREATE
+            </button>
+    </div>
+</div>
+</body>
+</html>
